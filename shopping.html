@@ -1,0 +1,222 @@
+Security Gorilla
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Carrito</title>
+    <style>
+        /*Variables de colores*/
+        
+         :root {
+            --very-light-pink: #ffffff;
+            --text-input-field: #15ff00;
+            --azul-claro: #ffffff;
+            --azul-medio1: #ffffff;
+            --azul-medio2: #000000;
+            --azul-baby: #000000;
+            --azul-oscuro: #000000;
+            --white: #ffffff;
+            --black: #000000;
+            /*Medidas del texto*/
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: var(--azul-medio2);
+            color: var(--text-input-field);
+        }
+        /*Imagenes*/
+        
+        .details {
+            width: 360px;
+            padding: 24px;
+            position: absolute;
+            right: 0;
+            box-sizing: border-box;
+        }
+        
+        .arrow img {
+            width: 25px;
+            height: 25px;
+            top: -10px;
+            cursor: pointer;
+        }
+        /*Container*/
+        
+        .my-order-content {
+            padding: 0 24px;
+            margin-bottom: 24px;
+            border-radius: 8px;
+        }
+        /*grid elementos dentro del total*/
+        
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+        }
+        
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+        .order p span:nth-child(2) {
+            font-size: var(--sm);
+            color: var(--white);
+        }
+        /*cards de producto*/
+        
+        .shopping {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr auto;
+            margin-bottom: 20px;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        figure img {
+            width: 100px;
+            height: 100px;
+            border: 3px solid var(--very-light-pink);
+        }
+        
+        .shopping figure {
+            margin: 0;
+        }
+        
+        .shopping figure img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        
+        .shopping p:nth-child(2) {
+            color: var(--azul-claro);
+            font-size: var(--sm);
+        }
+        
+        .shopping p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+        .close {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        /*Botones*/
+        
+        .primary-button {
+            border-radius: 8px;
+            border: none;
+            background-color: var(--azul-oscuro);
+            color: var(--white);
+            width: 100%;
+            font-family: 'Quicksand', sans-serif;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            cursor: pointer;
+        }
+        
+        .title {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
+        .title-container {
+            display: flex;
+            margin: 0;
+        }
+        
+        .title-container img {
+            transform: rotate(180deg);
+            margin-right: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <aside class="details">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="" clas="arrow">
+            <p class="title">Mi Orden</p>
+        </div>
+
+        <div class="my-order-content">
+            <div class="shopping">
+                <figure>
+                    <img src="./products/1.jpg" alt="Antivirus industrial: Symantec™ Critical System Protection">
+                </figure>
+                <p>Antivirus industrial: Symantec™ Critical System Protection</p>
+                <p>$200</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/2.png" alt="Squid Game">
+                </figure>
+                <p>Firewall industrial Stratix 5950 de Rockwell Automation</p>
+                <p>$3000</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/3.jpg" alt="Dragon">
+                </figure>
+                <p>Firewall industrial ISA 300 de Cisco</p>
+                <p>$3000</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/4.jpg" alt="Red Dinosaur">
+                </figure>
+                <p>Protección de End point Umbrella y AMP de Cisco</p>
+                <p>$100</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p>$6,300.00</p>
+            </div>
+
+            <button class="primary-button">
+                Chekout
+            </button>
+
+        </div>
+    </aside>
+</body>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links de Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Home View</title>
+
+    <style>
+         :root {
+            /*Variables de colores*/
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #2bff00;
+            --azul-claro: #ffffff;
+            --azul-medio1: #ffffff;
+            --azul-medio2: #000000;
+            --azul-baby: #000000;
+            --azul-oscuro: #000000;
+            --white: #FFFFFF;
+            --black: #000000;
+            /*Medidas del texto*/
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--azul-medio2);
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 40px;
+            place-content: center;
+        }
+        
+        .product-card {
+            width: 240px;
+        }
+        
+        .product-card .product {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 4px solid;
+            border-color: var(--very-light-pink);
+        }
+        
+        .product-card figure {
+            margin: 0;
+        }
+        
+        .product-card figure img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+        }
+        
+        .info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--sm);
+            color: var(--text-input-field);
+            margin: 0 0 6px 0;
+        }
+        
+        .info div p:nth-child(2) {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            margin: 0;
+        }
+        
+        @media (max-width:640px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .product-card {
+                width: 140px;
+            }
+            .product-card .product {
+                width: 140px;
+                height: 140px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="main-container">
+
+        <div class="cards-container">
+
+            <div class="product-card">
+                <img src="./products/1.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$200</p>
+                        <p>Antivirus industrial: Symantec™ Critical System Protection</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/2.png" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$3000</p>
+                        <p> Firewall industrial Stratix 5950 de Rockwell Automation</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/3.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$3000</p>
+                        <p>Firewall industrial ISA 300 de Cisco</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/4.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$100</p>
+                        <p>Protección de End point Umbrella y AMP de Cisco</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/5.png" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$500</p>
+                        <p>Servicios de Consultoría en Seguridad informática</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/6.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$150</p>
+                        <p>Industrial Visibility de Tripwire</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/7.jpeg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$200</p>
+                        <p>Firewall PortMaster</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/8.jpeg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$100</p>
+                        <p>Proton VPN</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/9.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$80</p>
+                        <p>Proxy</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/10.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$300</p>
+                        <p>Router</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/11.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$200</p>
+                        <p>Shadowsocks Proxy</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/12.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$100</p>
+                        <p>Proxy</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/13.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$200</p>
+                        <p>Firewall</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./products/14.jpg" alt="product" class="product">
+                <div class="info">
+                    <div>
+                        <p>$350</p>
+                        <p>ProxyChain</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/addtocar.png" alt="logo-compra">
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <img src="./products/15.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$1438</p>
+                    <p>Gestor de Contraseñas</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/16.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$800</p>
+                    <p>Cable Ethernet CAT-8 60MTS</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/17.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$20,000</p>
+                    <p>Cisco Catalyst 3850</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/18.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$25,000</p>
+                    <p>Cisco Firepower</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/19.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$20,000</p>
+                    <p>Cisco Nexus 9000</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/20.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$25,000</p>
+                    <p>Cradlepoint IBR900</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/21.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$1,500</p>
+                    <p>Office Home & Business 2024</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/22.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$5,000</p>
+                    <p>Palo-Alto-GP-1</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/23.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$15,000</p>
+                    <p>Sophos XGS 6500</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./products/24.png" alt="product" class="product">
+            <div class="info">
+                <div>
+                    <p>$9,000</p>
+                    <p>XGS 5500</p>
+                </div>
+                <figure>
+                    <img src="./icons/addtocar.png" alt="logo-compra">
+                </figure>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

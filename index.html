@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Security Gorilla</title>
+
+</head>
+
+<body>
+    <nav>
+        <!--Menu de hamburguesa-->
+        <img src="./icons/lista.png" alt="menu" class="menu">
+
+        <!--Menu en desktop izquierda-->
+        <div class="navbar-left">
+            <img src="./logos/logo.png  " alt="Logo" class="logo">
+            <ul>
+                <li>
+                    <a href="/" class="dktitle">Todos</a>
+                </li>
+                <li>
+                    <a href="/">Software</a>
+                </li>
+                <li>
+                    <a href="/">Hardware</a>
+                </li>
+                <li>
+                    <a href="/">Servicios</a>
+                </li>
+                <li>
+                    <a href="/">Consultoría</a>
+                </li>
+                <li>
+                    <a href="/">Otros</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Menu en desktop derecha-->
+        <div class="navbar-right">
+            <ul>
+                <li class="nav-email">example@secgod.com
+
+                    <!--Menu desplegable-->
+                    <img src="./icons/flechita.svg" alt="flechita" class="flechita">
+
+                    <div class="mobile-menu">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="/">My Orders</a>
+                                </li>
+
+                                <li>
+                                    <a href="/">My Account</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="signup">
+                            <ul>
+                                <li>
+                                    <a href="/" class="signup">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-shopping">
+                    <img src="./icons/added.png" alt="Shopping car" class="added">
+                    <div>3</div>
+                </li>
+            </ul>
+        </div>
+
+        <!--Destok Menu-->
+
+        <div class="desktop-menu inactive">
+            <ul>
+                <li>
+                    <a href="/" class="title">Mi Orden</a>
+                </li>
+
+                <li>
+                    <a href="/">Mi Cuenta</a>
+                </li>
+
+                <li>
+                    <a href="/">Salir</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--Mobile Menu-->
+        <div class="mobileMenuWeb inactive">
+            <ul>
+                <li>
+                    <a href="/">CATEGORIAS</a>
+                </li>
+
+                <li>
+                    <a href="/">Todos</a>
+                </li>
+
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+
+                <li>
+                    <a href="/">Collection</a>
+                </li>
+
+                <li>
+                    <a href="/">Pots</a>
+                </li>
+
+                <li>
+                    <a href="/">Drone</a>
+                </li>
+                <li>
+                    <a href="/">Other</a>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="/">My Orders</a>
+                </li>
+
+                <li>
+                    <a href="/">My Account</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="/" class="email">example@secgod.com</a>
+                </li>
+
+                <li>
+                    <a href="/" class="sign-up">Sign Up</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!--Detalle del Producto-->
+    <aside class="details">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="" clas="arrow">
+            <p class="title">Mi Orden</p>
+        </div>
+
+        <div class="mi-orden-content">
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/2.png" alt="Squid Game">
+                </figure>
+                <p>Firewall industrial Stratix 5950 de Rockwell Automation</p>
+                <p>$8,000</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/3.jpg" alt="Dragon">
+                </figure>
+                <p>Firewall industrial ISA 300 de Cisco</p>
+                <p>$10,000</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="shopping">
+                <figure>
+                    <img src="./products/4.jpg" alt="Red Dinosaur">
+                </figure>
+                <p>Protección de End point Umbrella y AMP de Cisco</p>
+                <p>$100</p>
+                <img src="./icons/close.png" alt="close" class="close">
+            </div>
+
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                </p>
+                <p>$18,100</p>
+            </div>
+
+            <button class="primary-button">
+                Chekout
+            </button>
+
+        </div>
+    </aside>
+
+    <!--Detalle individual del Producto: click a cualquier img-->
+    <aside id="individualDetails" class="inactive">
+        <div class="close">
+            <img src="./icons/close.png" alt="Close" class="closeIcon">
+        </div>
+        <img src="./products/3.jpg" alt="Drone" class="imageProduct">
+        <div class="product-info">
+            <p>$10,000</p>
+            <p>Firewall industrial ISA 300 de Cisco</p>
+            <p>firewall industrial ha sido diseñado específicamente para entornos industriales exigentes, ofreciendo una seguridad integral sin límites.</p>
+            <button class="primary-button addtocar">
+                <img src="./icons/addtocar.png" alt="Addtocar">
+                Add to car
+            </button>
+        </div>
+    </aside>
+
+    <!--Home de productos-->
+    <section class="main-container">
+
+        <div class="cards-container">
+            <!--Código de los productos realizado con JS-->
+        </div>
+
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
